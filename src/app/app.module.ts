@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './pages/landing-page/landing-page.component';
-import { TrainerPageComponent } from './pages/trainer-page/trainer-page.component';
-import { PokeCatalogPageComponent } from './pages/poke-catalog-page/poke-catalog-page.component';
+import { LandingPage } from './pages/landing-page/landing-page.page';
+import { PokeCatalogPage } from './pages/poke-catalog-page/poke-catalog-page.page';
+import { TrainerPage } from './pages/trainer-page/trainer-page.page';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
-    TrainerPageComponent,
-    PokeCatalogPageComponent
+    LandingPage,
+    PokeCatalogPage,
+    TrainerPage
   ],
   imports: [
     BrowserModule,

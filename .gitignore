@@ -37,10 +37,8 @@ yarn-error.log
 testem.log
 /typings
 environments/
+noroff-api/
 
 # System files
 .DS_Store
 Thumbs.db
-
-# ignore noroff api
-noroff-api/

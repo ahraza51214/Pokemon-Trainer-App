@@ -6,7 +6,7 @@ import { TrainerPage } from './pages/trainer-page/trainer-page.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'login',
     component: LandingPage
   },
   {
@@ -16,6 +16,15 @@ const routes: Routes = [
   {
     path: 'poke-catalog',
     component: PokeCatalogPage
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'login'
+  },
+  {
+    path: '**',
+    redirectTo: 'login'
   }
 ];
 

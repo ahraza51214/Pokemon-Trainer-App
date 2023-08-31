@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { User } from 'src/app/models/user.model';
 import { LoginService } from 'src/app/services/login.service';
 
@@ -9,7 +10,10 @@ import { LoginService } from 'src/app/services/login.service';
   styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent {
-  constructor(private readonly loginService: LoginService){}
+  constructor(
+    private readonly router: Router,
+    private readonly loginService: LoginService
+    ){}
   
   public loginSubmit(LoginForm: NgForm): void {
     const username = LoginForm.value.username; 

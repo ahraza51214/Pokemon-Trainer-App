@@ -20,15 +20,17 @@ cd Pokemon-Trainer-App
 ```
 ## Set-up
 For API access, create "environment.ts" and "environment.prod.ts" files in the src/environments/ folder of the project, add the following lines and paste correct API key and url inside the quotation marks:
-```
+
 environment.development.ts
+```
 export const environment = {
   apiUrl: "<pokemon api url>",
   pokeApiUrl: "<user api url>",
   apiKey: "<api key>"
 };
-
+```
 environment.ts
+```
 export const environment = {
   apiUrl: "<pokemon api url>",
   pokeApiUrl: "<user api url>",

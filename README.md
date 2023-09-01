@@ -8,6 +8,9 @@ A Pokémon Trainer web app using the Angular Framework. The application allows a
 before being able to collect any Pokémon. Users must also be able to view the Pokémon that have been 
 collected in their own trainer page.
 
+## Component Tree
+
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

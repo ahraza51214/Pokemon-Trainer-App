@@ -1,5 +1,4 @@
 ## Contributors
-
 * Ali Hassan Raza (ahraza.devOps@gmail.com)
 * Pau Go Si (paugosi@hotmail.com)
 
@@ -19,10 +18,25 @@ In your console navigate to the folder where you want the project and run the fo
 git clone https://github.com/ahraza51214/Pokemon-Trainer-App
 cd Pokemon-Trainer-App
 ```
+For API access, create "environment.ts" and "environment.prod.ts" files in the src/environments/ folder of the project, add the following lines and paste correct API key and url inside the quotation marks:
+```
+environment.development.ts
+export const environment = {
+  apiUrl: "<pokemon api url>",
+  apiPokeUrl: "<user api url>",
+  apiKey: "<api key>"
+};
+
+environment.ts
+export const environment = {
+  apiUrl: "<pokemon api url>",
+  apiPokeUrl: "<user api url>",
+  apiKey: "<api key>"
+};
+```
+
 ## Set-up
-
 In order to use our app, you will need to generate a environment folder at the root of the repo using the following template:
-
 ```
 {
     apiUrl : <resource url>,

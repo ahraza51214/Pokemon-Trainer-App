@@ -19,7 +19,7 @@ git clone https://github.com/ahraza51214/Pokemon-Trainer-App
 cd Pokemon-Trainer-App
 ```
 ## Set-up
-For API access, create "environment.ts" and "environment.prod.ts" files in the src/environments/ folder of the project, add the following lines and paste correct API key and url inside the quotation marks:
+For API access, create "environment.development.ts" and "environment.ts" files in the src/environments/ folder of the project, add the following lines and paste correct API key and url inside the quotation marks:
 
 environment.development.ts
 ```

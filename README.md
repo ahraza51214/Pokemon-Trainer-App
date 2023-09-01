@@ -1,13 +1,12 @@
-# PokemonTrainerApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
-
-## Development server
-
 ## Contributors
 
 * Ali Hassan Raza (ahraza.devOps@gmail.com)
 * Pau Go Si (paugosi@hotmail.com)
+
+# PokemonTrainerApp
+A Pokémon Trainer web app using the Angular Framework. The application allows a user to collect Pokémon received from the PokeAPI. Users must enter username 
+before being able to collect any Pokémon. Users must also be able to view the Pokémon that have been 
+collected in their own trainer page.
 
 ## Code scaffolding
 

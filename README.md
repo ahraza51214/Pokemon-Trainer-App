@@ -5,7 +5,7 @@
 # PokemonTrainerApp
 A Pokémon Trainer web app using the Angular Framework. The application allows a user to collect Pokémon received from the PokeAPI. Users must enter username 
 before being able to collect any Pokémon. Users must also be able to view the Pokémon that have been 
-collected in their own trainer page.
+collected in their own trainer page. Try and play around with our app. 
 
 ## Component Tree
 <img width="1100" alt="Assignment3ComponentTree" src="https://github.com/ahraza51214/Pokemon-Trainer-App/assets/127191401/ce78a327-8b3b-49fd-86d0-d7c290d3c62f">
@@ -18,6 +18,7 @@ In your console navigate to the folder where you want the project and run the fo
 git clone https://github.com/ahraza51214/Pokemon-Trainer-App
 cd Pokemon-Trainer-App
 ```
+## Set-up
 For API access, create "environment.ts" and "environment.prod.ts" files in the src/environments/ folder of the project, add the following lines and paste correct API key and url inside the quotation marks:
 ```
 environment.development.ts
@@ -35,15 +36,6 @@ export const environment = {
 };
 ```
 
-## Set-up
-In order to use our app, you will need to generate a environment folder at the root of the repo using the following template:
-```
-{
-    apiUrl : <resource url>,
-    apiKey : <your key>,
-    pokeApiUrl: <pokemon api url>
-}
-```
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

@@ -24,16 +24,16 @@ For API access, create "environment.ts" and "environment.prod.ts" files in the s
 environment.development.ts
 ```
 export const environment = {
-  apiUrl: "<pokemon api url>",
-  pokeApiUrl: "<user api url>",
+  apiUrl: "<user api url>",
+  pokeApiUrl: "<pokemon api url>",
   apiKey: "<api key>"
 };
 ```
 environment.ts
 ```
 export const environment = {
-  apiUrl: "<pokemon api url>",
-  pokeApiUrl: "<user api url>",
+  apiUrl: "<user api url>",
+  pokeApiUrl: "<pokemon api url>",
   apiKey: "<api key>"
 };
 ```

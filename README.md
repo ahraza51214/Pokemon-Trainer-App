@@ -16,8 +16,19 @@ To run the code on local machine you will need access to the API (environment.ts
 You will also need Node.js: https://nodejs.org/en/download/, Angular CLI: https://angular.io/cli and git: https://git-scm.com/downloads
 In your console navigate to the folder where you want the project and run the following commands:
 ```
-git clone https://github.com/ahraza51214/sign-language-translator 
-cd sign-language-translator
+git clone https://github.com/ahraza51214/Pokemon-Trainer-App
+cd Pokemon-Trainer-App
+```
+## Set-up
+
+In order to use our app, you will need to generate a environment folder at the root of the repo using the following template:
+
+```
+{
+    apiUrl : <resource url>,
+    apiKey : <your key>,
+    pokeApiUrl: <pokemon api url>
+}
 ```
 ## Code scaffolding
 

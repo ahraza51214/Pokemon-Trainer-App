@@ -3,11 +3,10 @@ import {StorageKeys} from '../enums/storage-keys.enum';
 import { User } from '../models/user.model';
 import {StorageUtil} from '../utils/storage.util';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
+
 export class UserService {
 
   private _user?: User;

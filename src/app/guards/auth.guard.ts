@@ -11,9 +11,7 @@ export class AuthGuard implements CanActivate {
   constructor(
     private readonly router: Router,
     private readonly userService: UserService
-  ) {
-    
-  }
+  ) {}
 
   canActivate(
     route: ActivatedRouteSnapshot, 
@@ -24,12 +22,10 @@ export class AuthGuard implements CanActivate {
         
     if(this.userService.user) {
       return true
-    }else{
+    } else {
       this.router.navigateByUrl('/login')
       return false
     }
-    
-  
   }
   
 }

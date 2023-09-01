@@ -9,7 +9,7 @@ before being able to collect any Pokémon. Users must also be able to view the P
 collected in their own trainer page.
 
 ## Component Tree
-<img width="877" alt="Assignment3ComponentTree" src="https://github.com/ahraza51214/Pokemon-Trainer-App/assets/127191401/ce78a327-8b3b-49fd-86d0-d7c290d3c62f">
+<img width="1000" alt="Assignment3ComponentTree" src="https://github.com/ahraza51214/Pokemon-Trainer-App/assets/127191401/ce78a327-8b3b-49fd-86d0-d7c290d3c62f">
 
 
 ## Code scaffolding

@@ -37,9 +37,20 @@ export class TrainerPage implements OnInit {
       });
     }
   }
-/*
-  private extractIdFromUrl(url: string): number {
-    const match = url.match(/(\d+)\/$/);
-    return match ? +match[1] : 0;
-  }*/
+  removePokemon(index: number): void {
+    const user = this.userService.user;
+
+    if (user) {
+      // Remove the Pokémon from the user's collection.
+      user.pokemon.splice(index, 1);
+
+      // Now update this user in your backend (i.e., save the updated user data).
+      // This can be done using a service call to update the user in your database.
+      // Here's a hypothetical updateUserService - you'd have to implement this:
+      this.userService.updateUser(user).subscribe(() => {
+        // Refresh the displayed Pokémon list.
+        this.userPokemon.splice(index, 1);
+      });
+    }
+  }
 }

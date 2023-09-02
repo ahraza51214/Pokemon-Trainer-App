@@ -1,6 +1,5 @@
-<p>trainer-page works!</p>
-
-<div *ngFor="let p of userPokemon">
+<div *ngFor="let p of userPokemon; let i = index">
     <h2>{{ p.name }}</h2>
     <img [src]="p.imageUrl" alt="{{ p.name }}" />
+    <button (click)="removePokemon(i)">Remove</button>
 </div>

@@ -12,8 +12,8 @@ export class AuthGuard implements CanActivate {
     private readonly router: Router,
     private readonly userService: UserService
   ) {}
-/*
-  canActivate(
+
+  /*canActivate(
     route: ActivatedRouteSnapshot, 
     state: RouterStateSnapshot): 
       | Observable <boolean | UrlTree>
@@ -39,5 +39,6 @@ export class AuthGuard implements CanActivate {
         return false;
     }
 }
+ 
 
 }

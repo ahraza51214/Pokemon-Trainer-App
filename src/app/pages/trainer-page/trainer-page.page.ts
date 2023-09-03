@@ -45,17 +45,18 @@ export class TrainerPage implements OnInit {
         // will contain the results in the same order as the
         // Pokémon names in the user's Pokémon list
         forkJoin(observables).subscribe(pokemonDataArray => {
-            this.userPokemon = pokemonDataArray.map((pokemonData, index) => {
-                return {
-                    name: user.pokemon[index],
-                    imageUrl: pokemonData.sprites.front_default
-                };
-            });
+          // Assign the results to the userPokemon array
+          this.userPokemon = pokemonDataArray.map((pokemonData, index) => {
+            return {
+              name: user.pokemon[index],
+                imageUrl: pokemonData.sprites.front_default
+              };
+          });
         });
         this.cdRef.detectChanges();
     }
   }
-  
+  // This method is called when the user clicks on the "Add" button
   removePokemon(index: number): void {
     const user = this.userService.user;
   

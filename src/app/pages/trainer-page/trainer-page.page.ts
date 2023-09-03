@@ -23,7 +23,7 @@ export class TrainerPage implements OnInit {
 
   // This constructor injects the UserService into this class
   constructor(
-    private userService: UserService,
+    public userService: UserService,
     private http: HttpClient,
     private cdRef: ChangeDetectorRef
   ) {}

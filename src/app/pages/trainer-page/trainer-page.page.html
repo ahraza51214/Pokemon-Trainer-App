@@ -1,5 +1,24 @@
-<div *ngFor="let p of userPokemon; let i = index">
-    <h2>{{ p.name }}</h2>
-    <img [src]="p.imageUrl" alt="{{ p.name }}" />
-    <button (click)="removePokemon(i)">Remove</button>
+<h1>Welcome to your trainer page, {{ userService.user?.username }}</h1>
+<div class="cards-container">
+  <div *ngIf="userPokemon.length > 0; else noPokemon">
+    <div *ngFor="let p of userPokemon; let i = index" class="card">
+      <h2>{{ p.name }}</h2>
+      <img [src]="p.imageUrl" alt="{{ p.name }}" />
+      <button (click)="removePokemon(i)">Remove</button>
+    </div>
+  </div>
 </div>
+
+<ng-template #noPokemon>
+  <p>No Pokémon available.</p>
+</ng-template>
+
+<!-- 
+In the code above:
+
+We use *ngIf to check if the length of the userPokemon array is greater than 0. 
+If it is, we display the Pokémon as usual. If the userPokemon array is empty 
+(i.e., its length is 0), we display the message "No Pokémon available" from 
+the <ng-template> named noPokemon. This way, whenever a user removes all their Pokémon, 
+the message will be displayed automatically.
+ -->

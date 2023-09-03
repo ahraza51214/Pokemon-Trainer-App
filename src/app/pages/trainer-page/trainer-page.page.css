@@ -1,0 +1,57 @@
+/* Overall page styling */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3f4f6; /* Light background color */
+}
+
+/* Style for each Pokémon card */
+.card {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0e0e0; /* Slight border */
+  border-radius: 8px; /* Rounded corners */
+  width: 150px; /* Fixed width for each card */
+  margin-bottom: 20px; /* Space between cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  overflow: hidden; /* Helps handle child content */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-15px);
+}
+
+/* Pokémon name styling */
+.card h2 {
+  background-color: #FFCB05; /* Pikachu Yellow */
+  color: #333333; /* Dark text */
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add some padding */
+  text-align: center; /* Center the text */
+}
+
+/* Image styling */
+.card img {
+  display: block; /* Make it block level to fit container */
+  width: 100%; /* Stretch to fit container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Remove button styling */
+.card button {
+  display: block; /* Stretch to fit container */
+  width: 100%; /* Use entire width of card */
+  padding: 10px; /* Padding for button */
+  background-color: #FF3B3F; /* Red-ish color */
+  color: #ffffff; /* White text */
+  border: none; /* Remove default borders */
+  cursor: pointer; /* Hand cursor for button */
+  transition: background-color 0.5s ease; /* Hover effect */
+}
+
+.card button:hover {
+  background-color: #D32F2F; /* Darken color on hover */
+}

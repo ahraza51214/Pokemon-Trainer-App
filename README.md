@@ -8,7 +8,8 @@ before being able to collect any Pokémon. Users must also be able to view the P
 collected in their own trainer page. Try and play around with our app. 
 
 ## Component Tree
-<img width="1000" alt="Assignment3ComponentTree" src="https://github.com/ahraza51214/Pokemon-Trainer-App/assets/127191401/ce78a327-8b3b-49fd-86d0-d7c290d3c62f">
+<img width="1100" alt="Assignment3ComponentTree" src="https://github.com/ahraza51214/Pokemon-Trainer-App/assets/127191401/2c41c42a-711f-45aa-9593-b01fe3112cc8">
+
 
 ## Install
 To run the code on local machine you will need access to the API (environment.ts file). 

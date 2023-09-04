@@ -1,6 +1,8 @@
-<div *ngFor="let pokemon of pokemons" class="pokemon-card">
-    <h3>{{ pokemon.name }}</h3>
-    <img [src]="getImageUrl(pokemon.url)" alt="{{ pokemon.name }}">
-    <button (click)="addPokemon(pokemon.name)" *ngIf="!userService.isCollected(pokemon.name)">Add to Collection</button>
-  </div>
-  
+<h1>Welcome to your pokemon catalog page, {{ userService.user?.username }}</h1>
+<div class="pokemon-container">
+    <div *ngFor="let pokemon of pokemons" class="pokemon-card">
+        <h3>{{ pokemon.name }}</h3>
+        <img [src]="getImageUrl(pokemon.url)" alt="{{ pokemon.name }}">
+        <button (click)="addPokemon(pokemon.name)" *ngIf="!userService.isCollected(pokemon.name)">Add to Collection</button>
+    </div>
+</div>

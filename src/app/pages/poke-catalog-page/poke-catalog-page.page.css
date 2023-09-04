@@ -1,4 +1,11 @@
-
+/* Overall page styling */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3f4f6; /* Light background color */
+}
 
 .pokemon-container {
     display: flex;
@@ -8,12 +15,12 @@
   }
   
   .pokemon-card {
-    border: 1px solid #ccc;
     padding: 20px;
     border-radius: 8px;
     width: 150px;
     text-align: center;
-    background-color: lightgray;
+    background-color: #ffffff; /* White background */
+    border: 5px solid #e0e0e0; /* Slight border */
   }
   
   .pokemon-card img {

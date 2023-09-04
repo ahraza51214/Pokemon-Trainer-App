@@ -9,13 +9,10 @@ import { environment } from 'src/environments/environment';
 })
 export class PokeapiService {
 
-  //private readonly BASE_URL: string = 'https://pokeapi.co/api/v2';
-
   constructor(private http: HttpClient) { }
 
   getAllPokemon(limit: number = 150): Observable<any> {
     return this.http.get(`${environment.pokeApiUrl}?limit=${limit}`);
   }
-
   
 }

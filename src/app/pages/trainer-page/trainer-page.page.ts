@@ -27,6 +27,7 @@ export class TrainerPage implements OnInit {
     private http: HttpClient,
     private cdRef: ChangeDetectorRef
   ) {}
+
   // This method is called when the page is loaded
   ngOnInit(): void {
     const user = this.userService.user;
@@ -56,6 +57,7 @@ export class TrainerPage implements OnInit {
         this.cdRef.detectChanges();
     }
   }
+  
   // This method is called when the user clicks on the "Add" button
   removePokemon(index: number): void {
     const user = this.userService.user;

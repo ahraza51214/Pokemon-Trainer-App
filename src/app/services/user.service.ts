@@ -39,7 +39,7 @@ export class UserService {
   isLoggedIn(): boolean {
     return !!StorageUtil.storageRead(StorageKeys.User);
   }
-
+/*
   //Pokemon cellection api between trainer page and poke catalog page
   addPokemon(pokemonName: string): Observable<User> {
     if (!this._user) {
@@ -55,10 +55,11 @@ export class UserService {
 
     // Add the Pokémon to the user's collection
     this._user.pokemon.push(pokemonName);
+    sessionStorage.setItem('user', JSON.stringify(this._user));
 
     // Update the user using the API
     return this.updateUser(this._user);
-  }
+  }*/
 
 
   isCollected(pokemonName: string): boolean {
@@ -68,7 +69,7 @@ export class UserService {
     return this._user.pokemon.includes(pokemonName);
   }
 
-  
+  /*
   removePokemon(pokemonName: string): Observable<User> {
     if (!this._user) {
       // Handle error or throw an error
@@ -79,8 +80,14 @@ export class UserService {
     this._user.pokemon = this._user.pokemon.filter(p => p !== pokemonName);
   
     // Update the user using the API
-    return this.updateUser(this._user);
+    return this.updateUser(this._user).pipe(
+    tap(updatedUser => {
+      // Update the local user data with the updated user data from the API
+      this._user = updatedUser;
+    }));
   }
+
+
   addToCollection(pokemonName: string): Observable<User> {
     if (!this._user){
       // Handle error or throw an error
@@ -95,7 +102,7 @@ export class UserService {
 
     // Add the Pokémon to the user's collection locally
     this._user.pokemon.push(pokemonName);
-
+    
     // Update the user's data on the backend
     return this.updateUser(this._user).pipe(
     tap(updatedUser => {
@@ -103,7 +110,5 @@ export class UserService {
       this._user = updatedUser;
     })
   )}
-
-  
-
+*/
 }

@@ -13,7 +13,4 @@ export class LandingPage {
   handleLogin(): void {
     this.router.navigateByUrl('/poke-catalog');
   }
-  
-} 
-
-
+}

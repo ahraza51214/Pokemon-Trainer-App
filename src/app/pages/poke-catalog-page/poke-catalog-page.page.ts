@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PokeapiService } from 'src/app/services/pokeapi.service';
 import { UserService } from 'src/app/services/user.service';
-import { ChangeDetectorRef } from '@angular/core';
 
 
 /*
@@ -15,18 +14,23 @@ the component initializes and storing the results in pokemonList.
 })
 // Here we're exporting the PokeCatalogPage so that we can import it elsewhere.
 export class PokeCatalogPage implements OnInit {
-
   pokemons: any[] = [];
+  page = 1;
+  totalPokemons!: number;
 
   constructor(
     private pokeapiService: PokeapiService, 
     public userService: UserService,
-    private cdRef: ChangeDetectorRef
   ) { }
 
   ngOnInit(): void {
-    this.pokeapiService.getAllPokemon().subscribe(data => {
-      this.pokemons = data.results;
+    this.getPokemons();
+  }
+
+  getPokemons(){
+    this.pokeapiService.getAllPokemon(10, this.page + 0).subscribe((Response: any) => {
+      this.totalPokemons = Response.count;
+      this.pokemons = Response.results;
     });
   }
 

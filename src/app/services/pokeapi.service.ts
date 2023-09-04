@@ -11,8 +11,8 @@ export class PokeapiService {
 
   constructor(private http: HttpClient) { }
 
-  getAllPokemon(limit: number = 150): Observable<any> {
-    return this.http.get(`${environment.pokeApiUrl}?limit=${limit}`);
+  getAllPokemon(limit: number, offset: number): Observable<any> {
+    return this.http.get(`${environment.pokeApiUrl}?limit=${limit}&offset=${offset}`);
   }
   
 }

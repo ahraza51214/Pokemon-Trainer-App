@@ -15,7 +15,7 @@ the component initializes and storing the results in pokemonList.
 // Here we're exporting the PokeCatalogPage so that we can import it elsewhere.
 export class PokeCatalogPage implements OnInit {
   pokemons: any[] = [];
-  page = 1;
+  page!: number;
   totalPokemons!: number;
 
   constructor(
@@ -28,7 +28,7 @@ export class PokeCatalogPage implements OnInit {
   }
 
   getPokemons(){
-    this.pokeapiService.getAllPokemon(10, this.page + 0).subscribe((Response: any) => {
+    this.pokeapiService.getAllPokemon(10, this.page * 10).subscribe((Response: any) => {
       this.totalPokemons = Response.count;
       this.pokemons = Response.results;
     });
